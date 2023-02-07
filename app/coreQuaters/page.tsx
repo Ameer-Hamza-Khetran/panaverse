@@ -2,6 +2,7 @@
 
 import { Box, Button, Card, CardBody, CardFooter, Grid, GridItem, Heading, Text } from "@chakra-ui/react"
 import Image from "next/image"
+import styles from "../coreQuaters/page.module.css"
 
 export default function CoreQuaters() {
     return(
@@ -14,7 +15,7 @@ export default function CoreQuaters() {
                     3 Core Quaters
                 </Text>
             </GridItem>
-            <GridItem gridRow={'2/3'} gridColumn={'1/4'} justifySelf={'center'} mb={'20px'}>
+            <GridItem gridRow={'2/3'} gridColumn={'1/4'} justifySelf={'center'} mb={'20px'} mt={'20px'}>
                 <Text textAlign={'center'} maxWidth={['full','full', '1080px']}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </Text>
@@ -23,9 +24,9 @@ export default function CoreQuaters() {
             {/**--------------- Quater 1 Core ------------------ */}
 
             <GridItem gridRow={'3/4'} gridColumn={'1/2'}>
-            <Card size={'sm'} maxHeight={'800px'}>
-                <CardBody>
-                    <Image src='/images/jsts1.jpg' alt="Javascript and Typescript image" width={'700'} height={'200'}></Image>
+            <Card size={'sm'} height={['auto', 'auto', 'auto', '580px']}>
+                <CardBody display={'flex'} flexDirection={'column'} justifyContent={'space-around'}>
+                    <Image src='/images/jsts1.jpg' alt="Javascript and Typescript image" width={'700'} height={'300'}></Image>
                     <Heading as='h3' fontSize={'20px'} fontWeight={'bold'} textAlign={'center'} mt={'10px'}>
                         Quater 1 Core (CS-101)
                     </Heading>
@@ -49,7 +50,7 @@ export default function CoreQuaters() {
             <GridItem gridRow={['4/5', '4/5', '3/4']} gridColumn={['1/2','1/2','2/3']}>
             <Card size={'sm'} maxHeight={'800px'}>
                 <CardBody>
-                    <Image src='/images/next.png' alt="Next 13 and Vercel image" width={'700'} height={'200'}></Image>
+                    <Image src='/images/next.png' alt="Next 13 and Vercel image" width={'700'} height={'300'}></Image>
                     <Heading as='h3' fontSize={'20px'} fontWeight={'bold'} textAlign={'center'} mt={'10px'}>
                         Quater 2 Core (W2-201)
                     </Heading>
@@ -71,9 +72,9 @@ export default function CoreQuaters() {
             {/**--------------- Quater 3 Core ------------------ */}
 
             <GridItem gridRow={['5/6', '5/6', '4/5', '3/4']} gridColumn={['1/2','1/2','1/4','3/4']}>
-            <Card size={'sm'} maxHeight={'800px'} alignItems={'stretch'}>
-                <CardBody>
-                    <Image src='/images/dollar.jpg' alt="Dollar Coin image" width={'850'} height={'200'}></Image>
+            <Card size={'sm'} height={['auto', 'auto', 'auto', '580px']}>
+                <CardBody display={'flex'} flexDirection={'column'} justifyContent={'space-around'}>
+                    <Image src='/images/dollar.jpg' alt="Dollar Coin image" width={'850'} height={'300'}></Image>
                     <Heading as='h3' fontSize={'20px'} fontWeight={'bold'} textAlign={'center'} mt={'10px'}>
                         Quater 3 Core ($-101)
                     </Heading>
